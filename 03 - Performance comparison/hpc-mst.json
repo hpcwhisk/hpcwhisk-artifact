@@ -1,0 +1,28 @@
+{
+  "experiments": {
+    "update_code": false,
+    "update_storage": false,
+    "download_results": false,
+    "deployment": "openwhisk",
+    "runtime": {
+      "language": "python",
+      "version": "3.6"
+    },
+    "type": "perf-cost",
+    "perf-cost": {
+      "benchmark": "502.graph-mst",
+      "update_storage": false,
+      "experiments": ["warm"],
+      "input-size": "small",
+      "repetitions": 201,
+      "concurrent-invocations": 1,
+      "memory-sizes": [2048]
+    }
+
+  },
+  "deployment": {
+    "name": "openwhisk",
+    "shutdownStorage": false,
+    "removeCluster": false
+  }
+}

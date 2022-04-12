@@ -1,0 +1,35 @@
+{
+  "experiments": {
+    "update_code": false,
+    "update_storage": false,
+    "download_results": false,
+    "runtime": {
+      "language": "python",
+      "version": "3.6"
+    },
+    "type": "perf-cost",
+    "perf-cost": {
+      "benchmark": "503.graph-bfs",
+      "experiments": ["warm"],
+      "input-size": "small",
+      "repetitions": 250,
+      "concurrent-invocations": 50,
+      "memory-sizes": [2048]
+    }
+  },
+  "deployment": {
+    "name": "aws",
+    "aws": {
+      "region": "us-east-1",
+      "lambda-role": ""
+    },
+    "azure": {
+      "region": "westeurope"
+    },
+    "gcp": {
+      "region": "europe-west1",
+      "project_name": "",
+      "credentials": ""
+    }
+  }
+}
