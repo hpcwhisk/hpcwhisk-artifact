@@ -1,9 +1,9 @@
 [submodule "06 Performance comparison/openwhisk-runtime-go"]
 	path = 03 - Performance comparison/openwhisk-runtime-go
-	url = https://github.com/pmzuk/openwhisk-runtime-go
+	url = https://github.com/hpcwhisk/openwhisk-runtime-go
 [submodule "06 Performance comparison/openwhisk-runtime-python"]
 	path = 03 - Performance comparison/openwhisk-runtime-python
 	url = https://github.com/apache/openwhisk-runtime-python
 [submodule "06 Performance comparison/serverless-benchmarks"]
 	path = 03 - Performance comparison/serverless-benchmarks
-	url = https://github.com/opal-mimuw/serverless-benchmarks
+	url = https://github.com/hpcwhisk/serverless-benchmarks
