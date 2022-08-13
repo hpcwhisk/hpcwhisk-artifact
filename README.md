@@ -2,7 +2,8 @@
 
 This is one of the artifacts for the following paper:
 
-> Bartłomiej Przybylski, Paweł Żuk, Krzysztof Rzadca, _Call Scheduling to Reduce Response Time of a FaaS System_, IEEE Cluster 2022 - Preprint: https://arxiv.org/abs/2207.13168
+> Bartłomiej Przybylski, Maciej Pawlik, Paweł Żuk, Bartłomiej Łagosz, Maciej Malawski, Krzysztof Rzadca, _Using Unused: Non-Invasive Dynamic FaaS Infrastructure with HPC-Whisk_, ACM/IEEE Supercomputing 2022
+
 
 Our system setup was based on the following external software:
 
@@ -10,9 +11,9 @@ Our system setup was based on the following external software:
 * Gatling 3.5.1 (data gathering)
 * Python 3.8.6 / matplotlib 3.3.2 / numpy 1.20.2 / seaborn 0.11.0 / bitarray 2.2.2 (offline analysis)
 
-The reproduction of the experiment requires one to set up OpenWhisk ([with the changes described in the article](https://github.com/pmzuk/openwhisk-runtime-go/), Sec. III) and some adjustments in the configuration of the Slurm Workload Manager. For reference, we provide our Slurm configuration in the `tools/slurm.cfg` file.
+The reproduction of the experiment requires one to set up OpenWhisk ([with the changes described in the article](https://github.com/hpcwhisk/openwhisk-runtime-go/), Sec. III) and some adjustments in the configuration of the Slurm Workload Manager. For reference, we provide our Slurm configuration in the `tools/slurm.cfg` file.
 
-We use Gatling to generate a 24h-long load in our experiments. In this repository, we provide the `tools/gatling.sh` script which is a wrapper that ensures the usage of a specific Gatling version (3.5.1) and the provided Gatling scenario. The `job-generation/job_generator.py` script in the [hpcwhisk](https://github.com/bartlomiejlagosz/hpcwhisk) repository (Artifact 1) registers test actions used in Gatling scenario.
+We use Gatling to generate a 24h-long load in our experiments. In this repository, we provide the `tools/gatling.sh` script which is a wrapper that ensures the usage of a specific Gatling version (3.5.1) and the provided Gatling scenario. The `job-generation/job_generator.py` script in the [hpcwhisk](https://github.com/hpcwhisk/hpcwhisk) repository (Artifact 1) registers test actions used in Gatling scenario.
 
 This `hpcwhisk-artifact` git repository contains all the files that help to reproduce (1) the configuration of the cluster, (2) the process of data gathering, and (3) the process of data analysis. It consists of 5 separate folders.
 
